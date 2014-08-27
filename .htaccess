@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+
+    # Force slash
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !(.*)/$
+    RewriteRule (.*)$ %{REQUEST_URI}/ [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ $1.cfm [QSA,L]
+</IfModule>

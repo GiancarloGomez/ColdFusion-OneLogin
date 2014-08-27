@@ -1,0 +1,58 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+body,table,input,button,select,textarea{
+  font: normal 14px/1.4em 'Source Sans Pro', sans-serif;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.setup-instructions{
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.setup-instructions h1{
+  margin-top: 0;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin p{
+  margin:1em 0;
+}
+
+.modal-header h3{
+  margin:0;
+}
+.modal-body ul{
+  margin-bottom: 0;
+}
+.bold{
+  font-weight:700;
+}
+.modal-footer{
+  margin-top:0;
+  padding:15px;
+}
+pre{
+  font:normal 12px/1.4em 'Source Code Pro',monospace;
+}
