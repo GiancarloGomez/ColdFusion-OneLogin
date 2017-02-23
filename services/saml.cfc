@@ -112,7 +112,7 @@ component{
         var values= XmlSearch(arguments.xmlResponse,arguments.xpath);
         if (arguments.reqAttrib){
             if (!ArrayLen(values))
-                throw(type:"saml" message:"Error: No value for: #xpath#");
+                throw(type:"saml", message:"Error: No value for: #xpath#");
         }
         if (isArray(values))
             return values[1];
