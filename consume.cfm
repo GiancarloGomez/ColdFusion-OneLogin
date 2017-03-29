@@ -11,6 +11,7 @@
     // instead of using the loadXmlFromBase64 as it throws an error, use the coded
     // directly to decode the  SAMLResponse and then pass to loadXml
     b64Coded    = createObject("java","org.apache.commons.codec.binary.Base64");
+
     xmlString   = toString(b64Coded.decode(trim(form.SAMLResponse)));
 
     // now load the XML
@@ -116,7 +117,7 @@
             </cfif>
         </table>
         <div class="well">
-            <pre>#encodeForHTML(reReplace(xmlString,"(<saml|<ds)","\n\1","ALL"))#</pre>
+          <pre>#encodeForHTML(reReplace(xmlString,"(<saml|<ds)",chr(10) & "\1","ALL"))#</pre>
         </div>
     </div>
     </cfoutput>
